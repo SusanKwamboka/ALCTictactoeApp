@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Tic-tac-toe</string>
+
+    <string name="title_activity_intro">Intro</string>
+    <string name="three">3*3</string>
+    <string name="five">5*5</string>
+    <string name="reset">RESET</string>
+    <string name="back">BACK</string>
+    <string name="you">YOUR SCORE</string>
+    <string name="single">PLAY WITH COMPUTER</string>
+    <string name="TWIN">PLAY WITH ANOTHER HUMAN</string>
+    <string name="choice">CLICK BUTTON TO PLAY GAME OF CHOICE </string>
+    <string name="choice2">CLICK BUTTON TO PLAY GAME OF CHOICE </string>
+    <string name="first_player">FIRST PLAYER</string>
+    <string name="second_player">SECOND PLAYER</string>
+    <string name="play">PLAY</string>
+    <string name="xscore">PLAYER X </string>
+    <string name="oscore">PLAYER 0 </string>
+    <string name="comp">COMP SCORE</string>
+    <string name="title_activity_intro2">Intro2</string>
+
+
+</resources>
