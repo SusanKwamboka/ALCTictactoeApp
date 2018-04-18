@@ -196,7 +196,15 @@ startActivity(intent);
         }
     }
 
-
+public void disable(){
+    for (i = 1; i <= 3; i++) {
+        for (j = 1; j <= 3; j++) {
+            if (b[i][j].isEnabled()) {
+                b[i][j].setEnabled(false);
+            }
+        }
+    }
+}
     // check the board to see if someone has won
     private boolean checkBoard() {
         boolean gameOver = false;
@@ -211,7 +219,8 @@ startActivity(intent);
             textView.setText("Game over. You win!");
             myscore++;
             TextView meTextView =  findViewById(R.id.mescore);
-            meTextView.setText( "" + myscore);                     //update scoreboard
+            meTextView.setText( "" + myscore);//update scoreboard
+            disable();
             gameOver = true;
 
 
@@ -226,7 +235,8 @@ startActivity(intent);
             textView.setText("Game over. The computer wins!");
             compscore++;
             TextView compTextView =  findViewById(R.id.cscore);
-            compTextView.setText( "" + compscore);                  //update scoreboard
+            compTextView.setText( "" + compscore);   //update scoreboard
+            disable();
             gameOver = true;
 
 
@@ -246,6 +256,7 @@ startActivity(intent);
 
             }
         }
+
         return gameOver;
     }
 }
