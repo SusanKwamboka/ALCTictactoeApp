@@ -297,7 +297,15 @@ public class Intro2 extends AppCompatActivity {
         }
     }
 
-
+    public void disable(){
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5; j++) {
+                if (b[i][j].isEnabled()) {
+                    b[i][j].setEnabled(false);
+                }
+            }
+        }
+    }
 
     // check the board to see if someone has won
     public boolean checkBoard() {
@@ -319,6 +327,7 @@ public class Intro2 extends AppCompatActivity {
             myscore++;
             TextView meTextView =  findViewById(R.id.mescore);
             meTextView.setText( "" + myscore);
+            disable();
         gameOver= true;
 
 
@@ -338,6 +347,7 @@ public class Intro2 extends AppCompatActivity {
             compscore++;
             TextView compTextView =  findViewById(R.id.cscore);
             compTextView.setText( "" + compscore);
+            disable();
             gameOver = true;
 
 
